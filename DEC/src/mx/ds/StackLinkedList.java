@@ -17,12 +17,14 @@ public class StackLinkedList<T> {
 		}
 	}
 	
+	
 	public T pop() {
 		if(top == null) {
 			System.out.println("Pila vacia");
 			return null;
 		}
 		T value =(T) top.value;
+		// Recorre el top al siguiente en curso de orden de almacenamiento
 		top = top.next;
 		return value;
 	}
