@@ -10,4 +10,8 @@ public class DataSet {
 			NumberTry = 0;
 		}
 	}
+	
+	public int getSize () {
+		return data.length;
+	}
 }
